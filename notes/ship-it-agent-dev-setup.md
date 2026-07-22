@@ -28,6 +28,14 @@ Install the following before starting:
 No GitHub, Jira, ServiceNow, or Confluence credentials are required. The demo
 uses synthetic fixtures and does not call bank systems.
 
+## Development IDE
+
+Use **Devin Desktop** as the recommended development environment. Delegate
+bounded, contract-driven tasks—such as implementing a Java MCP tool, a retrieval
+adapter, or an ADK workflow—then review the generated changes before accepting
+them. Keep MCP contracts, policy checks, and any write-like tool behavior under
+human review; all demo mutations remain fixture-backed and `dryRun: true`.
+
 ## Intended workspace layout
 
 ```text

@@ -1,5 +1,9 @@
 # 🚀 ReleaseGate AI — Autonomous Release Control Resolution Agent
 
+Status: Rejected
+
+Why: Merged into `ideas/ship-it-agent.md` on 2026-07-22; its release-control resolution and PR-sequencing concepts now strengthen the Ship-It Agent pitch.
+
 ---
 
 ## The Problem

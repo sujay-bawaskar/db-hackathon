@@ -59,7 +59,7 @@ what's the benefit?<br>
 Tomorrow you spend minutes reviewing it.
 The AI does the repetitive work—
 humans make the important decisions.
-That's human-in-the-loop done right.
+That's how you do Human in the loop correctly.
 
 
 

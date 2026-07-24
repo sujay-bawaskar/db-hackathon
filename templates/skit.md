@@ -16,7 +16,7 @@ But somehow I need to check Jira...
 ...takes two weeks.<br>
 **Dev:** Why are you doing all that manually?<br>
 **RM:** Because that's release engineering. Unless you've invented an AI release manager overnight.<br>
-**Dev:** Actually... Open your browser. Go to:<br>
+**Dev:** Actually... Open your browser. Go to:<br>
 localhost:8080/ship-it (local url)<br>
 **Dev:**<br>
 Just paste your Jira Fix Version. And Click Generate.<br>
@@ -42,8 +42,9 @@ Now the code owner only has one thing to review — the complete release package
 **Dev:** Today you spend days collecting evidence.<br>
 Tomorrow you spend minutes reviewing it.
 The AI does the repetitive work—humans make the important decisions.
-That's how you do Human in the loop correctly.
-**RM:** Wow... That would've saved me weeks. <br> How did you actually build all of this?
+That's how you do Human in the loop correctly.<br>
+
+**RM:** Wow... That would've saved me weeks. <br> How did you actually build all of this? <br>
 **Architect:** That's the interesting part. We didn't build one giant AI.
 We built a team of specialized agents orchestrated by Google ADK. <br> 
 Everything starts when you paste a Jira Fix Version. <br> ADK coordinates the entire workflow and decides which agent should act next. <br>
@@ -61,21 +62,13 @@ Everything is packaged into one release bundle, while BigQuery stores deployment
 
 
 
-If time is left <br>
-**RM:** Okay... I'm convinced. But how is this actually working? <br>
-**Dev:** Here's the architecture. <br>
-The workflow is orchestrated using Google ADK.<br>
-Gemini analyzes the ticket, pull requests, commits, logs, and infrastructure changes using its long context window.
-Document AI reads compliance PDFs and extracts policy clauses.
-Specialist resolver agents classify each control into:<br>
-* Passed
-* Safe to auto-resolve
-* Human escalation
-If it's safe...<br>
-ADK uses function calling to generate draft PRs, Jira tasks, approval emails, or deployment requests.
-Finally, release metrics are stored in BigQuery for audit history and DORA reporting. Everything ends with one human-reviewable release package.<br>
+(If time is left <br>)
+**RM:** Okay... I'm convinced. But how the agent talks to all your tools? <br>
+**Dev:** Normally, you'd jump between Jira, GitHub, CI pipelines, policy documents, email, confluence and deployment tools all day. <br>
+Instead, we use MCP (Model Context Protocol) as a common interface. <br> Rather than writing custom integrations for every application, the agent communicates through MCP to gather context and perform actions consistently. <br>
+So instead of you visiting ten different systems... the systems come to the agent. <br>
 **RM:** So instead of spending two weeks preparing a release... <br>
-I spend a few minutes reviewing one package.
+I spend a few minutes reviewing one package. <br>
 **Dev:** Exactly. <br>
 Don't replace the release manager.
 Give them their evenings back.
